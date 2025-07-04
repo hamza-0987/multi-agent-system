@@ -1,0 +1,29 @@
+{
+  "servers": {
+    "github": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-github"
+      ],
+      "description": "GitHub operations server",
+      "env": {
+        "GITHUB_PERSONAL_ACCESS_TOKEN": "your_github_token_here"
+      }
+    },
+    "fs": {
+      "command": "cmd",
+      "args": [
+        "/c",
+        "npx",
+        "-y",
+        "@smithery/cli@latest",
+        "run",
+        "@bunasQ/fs",
+        "--key",
+        "7ba657c3-46a1-4eaf-ae12-99ef48e46808"
+      ],
+      "description": "File system operations server via Smithery"
+    }
+  }
+}
